@@ -234,10 +234,14 @@ elif page == "📝 Make a Prediction":
         st.markdown("#### Loan details")
         d, e = st.columns(2)
         with d:
-            loan_amount = st.number_input(
-                "Loan amount", min_value=0.0, value=120.0, step=10.0,
-                help="Enter the amount in the same units used by the model's training data.",
-            )
+            
+              loan_amount = st.number_input(
+               "Loan amount (in thousands)",
+               min_value=0.0,
+               value=120.0,
+               step=10.0,
+               help="Enter 120 for ₹1,20,000, or 200 for ₹2,00,000.",
+        )
         with e:
             loan_term = st.selectbox("Loan term (months)", [360, 300, 240, 180, 120, 84, 60, 36, 12])
 
