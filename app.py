@@ -262,6 +262,8 @@ elif page == "📝 Make a Prediction":
 
         try:
             prediction, approval_probability = make_prediction(row)
+            st.write("DEBUG — Raw prediction:", model.predict(row)[0])
+            st.write("DEBUG — Model classes:", list(model.classes_))
             label = "Likely approved" if prediction == 1 else "Likely not approved"
 
             st.divider()
