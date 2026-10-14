@@ -16,7 +16,6 @@ st.set_page_config(
 # -------------------- Styling --------------------
 st.markdown(
     """
-    ```css
 <style>
     .stApp {
         background: #ffffff;
@@ -86,7 +85,6 @@ st.markdown(
         font-size: .9rem;
     }
 </style>
-```
     """,
     unsafe_allow_html=True,
 )
