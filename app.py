@@ -17,8 +17,18 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    .stApp {
-        background: linear-gradient(180deg, #f5f8ff 0%, #ffffff 42%);
+    ```css
+.stApp {
+    background: linear-gradient(180deg, #f5f8ff 0%, #ffffff 42%);
+    color: #16324f;
+}
+
+.stApp p,
+.stApp label,
+.stApp [data-testid="stMarkdownContainer"] {
+    color: #16324f;
+}
+```
     }
     [data-testid="stSidebar"] {
         background: linear-gradient(180deg, #102447 0%, #173b67 100%);
