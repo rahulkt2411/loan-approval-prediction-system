@@ -16,58 +16,77 @@ st.set_page_config(
 # -------------------- Styling --------------------
 st.markdown(
     """
-    <style>
     ```css
-.stApp {
-    background: linear-gradient(180deg, #f5f8ff 0%, #ffffff 42%);
-    color: #16324f;
-}
+<style>
+    .stApp {
+        background: #ffffff;
+        color: #000000;
+    }
 
-.stApp p,
-.stApp label,
-.stApp [data-testid="stMarkdownContainer"] {
-    color: #16324f;
-}
-```
+    .stApp p,
+    .stApp label,
+    .stApp [data-testid="stMarkdownContainer"],
+    .stApp h1,
+    .stApp h2,
+    .stApp h3,
+    .stApp h4 {
+        color: #000000;
     }
+
     [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #102447 0%, #173b67 100%);
+        background: #102447;
     }
+
     [data-testid="stSidebar"] * {
-        color: #f7fbff !important;
+        color: #ffffff !important;
     }
+
     .hero {
         padding: 1.6rem 1.8rem;
         border-radius: 22px;
-        color: white;
-        background: linear-gradient(120deg, #102447 0%, #176b87 100%);
+        color: #ffffff;
+        background: #102447;
         margin-bottom: 1.2rem;
-        box-shadow: 0 10px 30px rgba(16, 36, 71, 0.12);
     }
-    .hero h1 { color: white; margin-bottom: .35rem; }
-    .hero p { color: #e2f3ff; margin-bottom: 0; font-size: 1.02rem; }
+
+    .hero h1 {
+        color: #ffffff;
+    }
+
+    .hero p {
+        color: #ffffff;
+    }
+
     .section-note {
         padding: 0.9rem 1rem;
-        background: #edf6ff;
-        border-left: 4px solid #168aad;
+        background: #f3f4f6;
+        border-left: 4px solid #102447;
         border-radius: 8px;
-        color: #16324f;
+        color: #000000;
         margin: .4rem 0 1rem 0;
     }
+
     div[data-testid="stMetric"] {
-        background: white;
-        border: 1px solid #e4ebf5;
+        background: #ffffff;
+        color: #000000;
+        border: 1px solid #d1d5db;
         padding: 1rem;
         border-radius: 14px;
-        box-shadow: 0 4px 14px rgba(16, 36, 71, .04);
     }
-    div.stButton > button, div[data-testid="stFormSubmitButton"] > button {
+
+    div.stButton > button,
+    div[data-testid="stFormSubmitButton"] > button {
         border-radius: 10px;
         font-weight: 600;
         min-height: 2.8rem;
     }
-    .small-muted { color: #64748b; font-size: .9rem; }
-    </style>
+
+    .small-muted {
+        color: #444444;
+        font-size: .9rem;
+    }
+</style>
+```
     """,
     unsafe_allow_html=True,
 )
